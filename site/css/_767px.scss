@@ -1,0 +1,311 @@
+@media (max-width: 767px) {
+  $widthContent: 360px;
+
+  .center {
+    padding-left: calc(50% - $widthContent/2);
+    padding-right: calc(50% - $widthContent/2);
+  }
+
+  .header {
+    &__burger {
+      margin-right: 0;
+    }
+
+    &__account,
+    &__cart {
+      display: none;
+    }
+  }
+
+  .promo {
+    min-height: 363px;
+
+    &__img {
+      display: none;
+    }
+
+    &__title {
+      font-size: 38px;
+      width: 100%;
+      margin-left: 10%;
+
+      &_span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .offer {
+    padding-bottom: 64px;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 248px) 111px;
+
+    &__item {
+      padding-top: 98px;
+      padding-bottom: 98px;
+
+      &_4 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .products {
+    &__text {
+      margin-bottom: 64px;
+      text-align: center;
+    }
+
+    &__items {
+      gap: 16px;
+      grid-template-columns: 1fr;
+      margin-bottom: 40px;
+    }
+
+    &__button {
+      margin-bottom: 85px;
+    }
+  }
+
+  .feature {
+    padding-top: 48px;
+    padding-bottom: 81px;
+    gap: 46px;
+
+    &__title {
+      margin-bottom: 14px;
+    }
+  }
+
+  .subscribe {
+    padding-bottom: 110px;
+
+    &__info {
+      margin-bottom: 59px;
+    }
+
+    &__txt {
+      font-size: 18px;
+      min-height: 73px;
+    }
+
+    &__box__title {
+      line-height: 153.2%;
+    }
+
+    &__box__subtite {
+      font-size: 14px;
+      line-height: 153.2%;
+      margin-bottom: 22px;
+    }
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding-top: 43px;
+    padding-bottom: 9px;
+
+    &__social {
+      margin-bottom: 40px;
+    }
+  }
+
+  .breadcrumb {
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 46px;
+
+    &_cart {
+      padding-top: 50px;
+      padding-bottom: 69px;
+    }
+
+    &_reg {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+
+      &_center {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .slider {
+    min-height: 624px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    justify-content: center;
+    position: relative;
+
+    &__img {
+      width: 374px;
+    }
+
+    &__img_hidden {
+      width: 374px;
+    }
+
+    &__pagination {
+      position: absolute;
+
+      &_prev {
+        left: 0;
+      }
+
+      &_next {
+        right: 0;
+      }
+    }
+  }
+
+  .description {
+    margin: 0 auto 64px;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__text {
+      max-width: 326px;
+    }
+
+    &__line {
+      width: 175px;
+      margin: 32px auto 48px;
+    }
+  }
+
+  .sorting {
+    font-size: 10px;
+  }
+
+  .product__items {
+    margin-bottom: 64px;
+  }
+
+  .filter {
+    &-content {
+      padding-top: 24px;
+      padding-bottom: 32px;
+      gap: 0;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    &-box__summary {
+      &_span {
+        display: none;
+      }
+
+      &_svg {
+        margin-left: 0;
+        width: 37px;
+        height: 25px;
+      }
+    }
+
+    &__sorting {
+      gap: 24px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .cart {
+    padding-top: 40px;
+    padding-bottom: 96px;
+
+    &-goods {
+      max-width: 358px;
+      margin-bottom: 30px;
+
+      &__img {
+        width: 143px;
+      }
+
+      &__desc {
+        width: 175px;
+        padding-top: 14px;
+        padding-left: 17px;
+        padding-bottom: 38px;
+      }
+
+      &__title {
+        margin-bottom: 25px;
+        font-size: 16px;
+        width: 143px;
+      }
+
+      &__txt {
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+
+      &__input {
+        font-size: 10px;
+      }
+
+      &__close {
+        margin-right: 12px;
+        margin-left: 17px;
+        margin-top: 17px;
+
+        & svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    &__button-box {
+      gap: 0;
+      justify-content: space-between;
+      padding-top: 0;
+      padding-bottom: 48px;
+
+      &__btn {
+        font-size: 12px;
+        min-width: 175px;
+        padding: 9px 18px;
+        text-transform: none;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__form {
+      margin-bottom: 0;
+
+      &__title {
+        margin-top: 0;
+      }
+
+      &__btn {
+        padding: 11px 20px;
+        font-weight: 400;
+        text-transform: none;
+      }
+    }
+
+    &__total {
+      margin-top: 0;
+    }
+  }
+
+  .reg {
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+
+  }
+}

@@ -1,0 +1,198 @@
+.breadcrumb {
+    background-color: $colorTop;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include flexSpace;
+
+    &__title {
+        color: $colorSelect;
+        @include fontSite(24px, 400);
+    }
+
+    &__link {
+        color: #636363;
+        @include fontSite(14px, 300);
+
+        &:not(:last-child)::after {
+            content: "/";
+            padding-left: 5px;
+            padding-right: 2px;
+        }
+
+        &:hover {
+            color: $colorSelect;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+
+        &:last-child {
+            color: $colorSelect;
+            @include fontSite(14px, 700);
+        }
+    }
+}
+
+.slider {
+    min-height: 777px;
+    background-color: #F7F7F7;
+    @include flexSpace;
+    border: 1px solid #EAEAEA;
+
+    &__img_hidden {
+        display: none;
+        width: 650px;
+    }
+
+    &__pagination {
+        padding: 8px;
+        background-color: rgba(42, 42, 42, 0.15);
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        & path {
+            transition: fill .3s;
+        }
+
+        &:hover path {
+            fill: $colorSelect;
+        }
+
+        &:active path {
+            opacity: 0.5;
+        }
+    }
+
+}
+
+.description {
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    max-width: $widthContent;
+    margin: -64px auto 128px;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+
+    &__subtitle {
+        @include fontSite(14px, 300);
+        color: $colorSelect;
+    }
+
+    &__devider {
+        background-color: $colorSelect;
+        height: 3px;
+        width: 63px;
+        margin: 12px auto 12px;
+    }
+
+    &__title {
+        color: $colorText;
+        @include fontSite (18px, 300);
+        margin-bottom: 48px;
+    }
+
+    &__text {
+        color: $colorText;
+        @include fontSite(14px, 300);
+        max-width: 555px;
+        margin: 0 auto 32px;
+    }
+
+    &__price {
+        color: $colorSelect;
+        @include fontSite(24px, 300);
+    }
+
+    &__line {
+        background-color: #EAEAEA;
+        height: 1px;
+        width: 641px;
+        margin: 65px auto 65px;
+    }
+
+    &__btn {
+        color: $colorSelect;
+        border-color: $colorSelect;
+        min-width: 212px;
+        transition: all .3s;
+        margin-top: 48px;
+
+        &:hover {
+            color: #fff;
+            background-color: $colorSelect;
+        }
+    }
+
+    &__btn path {
+        fill: $colorSelect;
+        transition: fill .3s;
+    }
+
+    &__btn:hover path {
+        fill: #fff;
+    }
+}
+
+.sorting {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    color: $colorText;
+    @include fontSite(14px, 400);
+
+    &__details {
+        position: relative;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &__summary {
+        display: block;
+        transition: color 0.3s;
+
+        & path {
+            transition: fill 0.3s;
+        }
+
+        &:hover {
+            color: $colorSelect;
+        }
+
+        &:hover path {
+            fill: $colorSelect;
+        }
+
+        &__svg {
+            margin-bottom: 2px;
+            margin-left: 9px;
+        }
+
+        &-size {
+            position: absolute;
+            left: -15px;
+            z-index: 10;
+            min-width: 79px;
+            padding: 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            align-items: flex-start;
+            background-color: #fff;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+            &__checkbox {
+                margin-right: 9px;
+            }
+        }
+    }
+}
+
+.product__items {
+    margin-bottom: 128px;
+}

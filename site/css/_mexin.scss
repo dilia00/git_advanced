@@ -1,0 +1,33 @@
+@mixin fontSite ($size, $weight, $height: normal) {
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin flexSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexColumn ($align: center) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button ($border: none, $background: none) {
+    cursor: pointer;
+    background: $background;
+    outline: none;
+    border: $border;
+    transition: all 0.3s;
+}
